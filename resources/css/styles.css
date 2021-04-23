@@ -1,8 +1,13 @@
+html {
+  background-color: #light-grey;
+  font-family: #Verdana;
+}
 body {
-  background-color: light-gray;
-  font-family: Verdana;
+  
+  text-align: center;
+  padding-top: 20px;
 }
 
 h2 {
-  color: cyan;
+  color: #888888;
 }
