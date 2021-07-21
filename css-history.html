@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic3 DQ1 CSS History Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        table th {
+            color: white;
+            background-color: #4f2fb6;
+        }
+
+        table td:nth-child(1) {
+            font-weight: bold;
+        }
+
+        table tr:last-child {
+            background: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center">
+        <caption>
+            <h1>CSS History Table</h1>
+        </caption>
+        <tr>
+            <th>Year</th>
+            <th>Event</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>December 1996</td>
+            <td>CSS 1 specification becomes official</td>
+            <td>Specification started with font properties, colors, text spacing, alignment, margins, borders, padding,
+                positions, etc.</td>
+        </tr>
+        <tr>
+            <td>May 1998</td>
+            <td>CSS 2 specification published and recommended</td>
+            <td>Additional positioning, media type concept, additional font/text properties added.</td>
+        </tr>
+        <tr>
+            <td>June 1999</td>
+            <td>CSS 3 initial drafts</td>
+            <td>Backwards compatibility with CSS 2. Introduces modules to replace single specification.</td>
+        </tr>
+        <tr>
+            <td>2005 - 2011</td>
+            <td>CSS 2.1 recommendation and updates</td>
+            <td>Fixed some errors in CSS 2.</td>
+        </tr>
+        <tr>
+            <td>August 2011</td>
+            <td>Bootstrap initial release</td>
+            <td>Bootstrap is one of the largest HTML, CSS, and JS libraries used to date, offering developers modular
+                CSS implementation methods. Bootstrap version 5 just released in May 2021.</td>
+        </tr>
+        <tr>
+            <td>Current</td>
+            <td>CSS 3 "evolution"</td>
+            <td>Individual module specifications "level" (develop) at different rates. For example, <i>css3-multicol</i>
+                is in Working Draft status as of 02/2021, while <i>mediaqueries-4</i> is in Candidate Recommendation
+                status as of 06/2020.</td>
+        </tr>
+        <tr>
+            <td>Sources</td>
+            <td colspan="3"><a href="https://en.wikipedia.org/wiki/CSS">Wikipedia - CSS</a> <b>|</b> <a
+                    href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)">Wikipedia - Bootstrap</a></td>
+        </tr>
+    </table>
+    <p width="50%" align="center">Additionally, modern web browsers have contributed to the development of CSS, and the
+        web in general, by adding support for new CSS features as they are developed and adopted by the W3C.</p>
+</body>
+
+</html>
