@@ -1,0 +1,380 @@
+/* WHOLE PAGE */
+
+body {
+  min-height: 100vh;
+  display: -webkit-flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  color: white;
+  background: -webkit-linear-gradient(335deg, darkcyan, rgb(125, 0, 250));
+  font-family: Arial, Helvetica, sans-serif;  
+}
+
+h1 {
+  font-weight: bold;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+}
+
+a:visited {
+  color: rgb(50, 50, 50);
+}
+
+/* HEADER */
+
+header {
+  height: auto;
+  padding: 10px;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+/* used to override animations listed below using JS*/
+#logo-original {
+  width: 120px;
+  height: 120px;
+  border-radius: 0;
+}
+
+.page-title {
+  text-align: center;
+  margin: auto;
+}
+
+.header-logo-div {
+  width: 128px;
+  padding: 0;
+  margin: 0;
+}
+
+/* NAVIGATION */
+
+nav, .navbar, .navbar-nav, .nav-item {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  color: rgb(50, 50, 50);
+  display: -webkit-inline-flex;
+  justify-content: space-evenly;
+}
+
+nav a:link, .nav-link {
+  width: inherit;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: rgb(50, 50, 50);
+  border: 1px solid rgb(0, 0, 0, 0);
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+nav a:visited {
+  color: rgb(50, 50, 50);
+}
+
+nav a:active, .nav-link.active {
+  color: white;
+}
+
+nav a:hover {
+  border: 1px solid rgb(50, 50, 50);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* CONTENT */
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  border-top: 1px solid rgb(50, 50, 50);
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+
+#site-map {
+  width: fit-content;
+}
+
+#site-map p {
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+#site-map ul {
+  padding-left: 10px;
+}
+
+#site-map li {
+  list-style-type: none;
+  text-align: left;
+}
+
+#site-map a {
+  text-decoration: none;
+}
+
+
+/* INDEX.HTML content */
+
+.card {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0;
+}
+
+.card p, .home-content {
+  text-align: left;
+}
+
+.card ul {
+  padding: 0 15px;
+}
+
+.card li {
+  list-style-type: "~ ";
+}
+
+#game-start-btn {
+  width: 50%;
+  margin:auto;
+  padding: 20px;
+  background-color: white;
+  color: rgb(50, 50, 50);
+  text-align: center;
+  font-weight:bold;
+  border-radius: 32px;
+}
+
+#game-start-btn:hover {
+  cursor: pointer;
+}
+
+#game {
+  display: none;
+  width: fit-content;
+  border-top: 1px solid rgba(50, 50, 50, 0.5);
+}
+
+#game h2 {
+  text-align: center;
+}
+
+#game-grid {
+  background-color: rgba(200, 200, 200, 0.1);
+  border: 1px solid rgba(50, 50, 50, 0.5);
+  padding: 5px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.game-grid-row {
+  width: fit-content;
+  height: 60px;
+  margin: 0;
+}
+
+.game-tile {
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(80, 80, 80);
+  background-color:rgb(50, 50, 50);
+  cursor: pointer;
+}
+
+#winner {
+  display: none;
+  width: fit-content;
+  margin: 60px auto 0;
+}
+
+
+/* ABOUT-ME.HTML */
+
+.about-me-content {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.about-me-content h3 {
+  padding-left: 27px;
+}
+
+/* programing certifications carousel */
+
+#certs {
+  max-width: 700px;
+  border: 1px solid rgb(50, 50, 50);
+  margin-left: 25px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  padding: 8px 40px 40px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 40px;
+}
+
+.carousel-indicators {
+  margin: 0 auto 8px;
+}
+
+/* powerlifting records table */
+
+#records-table {
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-left: 25px;
+}
+
+#records-table,
+thead,
+th,
+td {
+  border: 1px solid rgb(50, 50, 50);
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+}
+
+#records-table td:first-child {
+  text-align: left;
+}
+
+#records-table tr:last-child td {
+  text-align: center;
+  font-weight: bold;
+}
+
+#records-table tr:last-child td:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#tbl-link-btn {
+  width: 100%;
+  padding: 5px 0;
+}
+
+
+/* POWERLIFTING-VIDEOS.HTML */
+
+#logo-roll {
+  animation: roll 1s linear 0s infinite;
+}
+
+.video-content iframe {
+  width: 640px;
+  height: 360px;
+}
+
+
+/* PHOTO-GALLERY.HTML */
+
+#logo-flash {
+  animation: flash 2s linear 2s infinite;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 5px white;
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 5px;
+}
+
+.frame img {
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+}
+
+.frame p {
+  width: 100%;
+  text-align: center;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes roll {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0%;
+  }
+
+  20% {
+    opacity: 100%;
+  }
+
+  35% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:900px) {
+  .video-content iframe {
+    width: 480px;
+    height: 290px;
+  }
+}
+
+@media (max-width:650px) {
+  .video-content iframe {
+    width: 360px;
+    height: 200px;
+  }
+}
