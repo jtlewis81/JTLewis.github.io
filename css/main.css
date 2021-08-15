@@ -175,7 +175,7 @@ footer {
 
 #game {
   display: none;
-  width: fit-content;
+  max-width: 100%;
   border-top: 1px solid rgba(50, 50, 50, 0.5);
 }
 
