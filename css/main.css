@@ -377,6 +377,14 @@ td {
 }
 
 @media (max-width:650px) {
+  #records-table {
+    font-size: 0.8rem;	
+   }
+	
+  #plate-img {
+    display: none;	  
+  }
+	
   .video-content iframe {
     width: 360px;
     height: 200px;
