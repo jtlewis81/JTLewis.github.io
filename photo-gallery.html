@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Page Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<!-- Page Body -->
+
+<body>
+
+    <!-- Content header -->
+    <header>
+        <!-- my logo image -->
+        <div class="header-logo-div">
+            <img id="logo-flash" class="logo" src="media/images/logo.png" title="My Logo"
+                alt="My Logo animated to imitate a camera flash" onclick="javascript:stopAnim('flash')">
+        </div>
+
+        <!-- page title heading -->
+        <div class="page-title">
+            <h1>Photo Gallery</h1>
+            <h3>Enjoy these pictures of some things I really like!<h3>
+        </div>
+        <div class="header-logo-div"></div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about-me.html">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="powerlifting-videos.html">POWERLIFTING VIDEOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="photo-gallery.html">PHOTO GALLERY</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="content">
+
+        <!-- photo gallery -->
+        <div class="gallery">
+            <div class="frame">
+                <img src="media/images/violin.jpg" title="Glasser AE Carbon Composite 4/4 Violin in black"
+                    alt="Glasser AE Carbon Composite 4/4 Violin in black">
+                <p>Glasser AE Carbon Composite 4/4 Violin in black</p>
+            </div>
+            <div class="frame">
+                <img src="media/images/raspi3bp.jpg" title="Raspberry Pi 3 Model B+" alt="Raspberry Pi 3 Model B+">
+                <p>Raspberry Pi 3 Model B+</p>
+            </div>
+            <div class="frame">
+                <img src="media/images/arduino.jpg" title="Arduino Uno R3" alt="Arduino Uno R3">
+                <p>Arduino Uno R3</p>
+            </div>
+            <div class="frame">
+                <img src="media/images/viper.jpg" title="Dodge Viper GTS" alt="Dodge Viper GTS">
+                <p>Dodge Viper GTS</p>
+            </div>
+            <div class="frame">
+                <img src="media/images/86.jpg" title="Toyota 86" alt="Toyota 86">
+                <p>Toyota 86</p>
+            </div>
+            <div class="frame">
+                <img src="media/images/rottie.jpg" title="Rottweiler" alt="Rottweiler">
+                <p>Rottweiler</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="site-map">
+            <p>SITE MAP</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="powerlifting-videos.html">Powerlifting Videos</a></li>
+                <li><a href="photo-gallery.html">Photo Gallery</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

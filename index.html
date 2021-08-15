@@ -1,8 +1,139 @@
-<html>
-	<head>
-		<link rel="stylesheet" href="resources/css/style.css" type="text/css" />
-	</head>
-	<body>
-		<h1>Welcome to JT's webpage!</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Page Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST-120 Milestone Project</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<!-- Page Body -->
+
+<body>
+
+    <!-- Content header -->
+    <header>
+        <!-- my logo image -->
+        <div id="logo-div-left" class="header-logo-div">
+            <img id="logo" class="logo" src="media/images/logo.png" title="My Logo (Click Me!)" alt="My Logo"
+                onclick="javascript:moveLogo()">
+        </div>
+        <!-- page title heading -->
+        <div class="page-title">
+            <h1>HOME</h1>
+            <h3>CST-120 Milestone Project</h3>
+        </div>
+
+        <!-- Empty div to center header text -->
+        <div id="logo-div-right" class="header-logo-div">
+            <!-- The logo will transition back and forth to and from here when clicked on, via JS -->
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about-me.html">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="powerlifting-videos.html">POWERLIFTING VIDEOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="photo-gallery.html">PHOTO GALLERY</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="content container-md home-content">
+        <div class="card bg-transparent">
+            <div class="card-body">
+                <h2>Hi, my name is Jamie Lewis. Welcome to my website!</h2>
+                <p>This website is a project for my "CST-120 - Introduction to Web Development" class at Grand Canyon
+                    University. The goals were to explore learning HTML, CSS, JavaScript, JQuery, and BootStrap. There
+                    are
+                    various features used throughout the site, but check out the big white button below to see the one I
+                    am
+                    most proud of.</p>
+            </div>
+        </div>
+
+        <div class="card bg-transparent">
+            <div class="card-body">
+                <h3>JavaScript features from Milestone 5</h3>
+                <p>Click on the logo in the top left corner of the page to:</p>
+                <ul>
+                    <li>Move the logo back and forth from one top corner to the other, on the HOME and ABOUT ME pages.
+                    </li>
+                    <li>Stop the logo animation and display a square logo on the POWERLIFTING VIDEOS and PHOTO GALLERY
+                        pages.<br />The animations can be restarted by refreshing the page or clicking the current
+                        page's nav link.</li>
+                </ul>
+            </div>
+        </div>
+
+        <p id="game-start-btn">Wanna play a game? Click me!</p>
+
+        <div id="game" class="card bg-transparent">
+            <div class="card-body">
+                <h2>PATHFINDER</h2>
+                <p>Welcome to my little JS game I call "Pathfinder"! This micro-game only has one level, as I have
+                    developed
+                    it purely for this school project website.</p>
+                <p>How to play: The goal is to reveal the hidden path from start to finish by clicking a tile adjacent
+                    to
+                    the last tile you clicked.
+                    <br />If the tile is part of the path, it will turn white. If it is not, the
+                    board will reset. You'll know if you've finished. Begin by clicking a tile!
+                    <br />(Hint: the first one is to
+                    the right of the first white
+                    tile.)
+                </p>
+
+                <div id="game-grid">
+                    <!-- The jQuery generated grid will go here -->
+                </div>
+
+                <!-- This div only shows up if you beat the micro-game -->
+                <div id="winner">
+                    <img src="media/images/wwcd.png" title="Winner Winner Chicken Dinner"
+                        alt="Winner Winner Chicken Dinner">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="site-map">
+            <p>SITE MAP</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="powerlifting-videos.html">Powerlifting Videos</a></li>
+                <li><a href="photo-gallery.html">Photo Gallery</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
 </html>

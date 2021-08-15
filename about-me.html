@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Page Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<!-- Page Body -->
+
+<body>
+    <!-- Content header -->
+    <header>
+        <!-- my logo image -->
+        <div id="logo-div-left" class="header-logo-div">
+            <img id="logo" class="logo" src="media/images/logo.png" title="My Logo (Click Me!)" alt="My Logo"
+                onclick="javascript:moveLogo()">
+        </div>
+
+        <!-- page title heading -->
+        <div class="page-title">
+            <h1>About Me</h1>
+            <h3>Get to know me a little bit!</h3>
+        </div>
+
+        <!-- Empty div to center header text -->
+        <div id="logo-div-right" class="header-logo-div">
+            <!-- The logo will transition back and forth to and from here when clicked on, via JS -->
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="about-me.html">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="powerlifting-videos.html">POWERLIFTING VIDEOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="photo-gallery.html">PHOTO GALLERY</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="content about-me-content">
+
+        <h2>~ Physical Features ~</h2>
+        <ul>
+            <li>Age: 39</li>
+            <li>Height: 5' 10.5"</li>
+            <li>Weight: ~215 lbs.</li>
+            <li>Hair Color: Brown</li>
+            <li>Eye Color: Blue</li>
+        </ul>
+        <br />
+
+        <h2>~ Education ~</h2>
+        <ul>
+            <li>1999 : Graduate of Christian Liberty Academy Satellite School (homeschool)</li>
+            <li>2010 : Maryland G.E.D. (because Christian Liberty Academy was not accredited)</li>
+            <li>Present : Junior year in Grand Canyon University's Bachelor of Science program for Software
+                Development
+            </li>
+        </ul>
+        <br />
+
+        <h2>~ Programming Skills & Experience <font size="3">(some a little, some very little)</font> ~</h2>
+        <ul>
+            <li>Java</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>PHP</li>
+            <li>Unity Game Engine</li>
+            <li>C#</li>
+        </ul>
+        <br />
+
+        <h2>~ Achievements ~</h2>
+
+        <h3>Programming Certifications</h3>
+        <!-- bootstrap carousel -->
+        <div id="certs" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#certs" data-slide-to="0" class="active"></li>
+                <li data-target="#certs" data-slide-to="1"></li>
+                <li data-target="#certs" data-slide-to="2"></li>
+                <li data-target="#certs" data-slide-to="3"></li>
+                <li data-target="#certs" data-slide-to="4"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="media/images/html-cert.png" alt="SoloLearn HTML Certification">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/images/css-cert.png" alt="SoloLearn CSS Certification">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/images/js-cert.png" alt="SoloLearn JS Certification">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/images/jquery-cert.png" alt="SoloLearn JQUERY Certification">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/images/java-cert.png" alt="SoloLearn JAVA Certification">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#certs" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#certs" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <br />
+
+        <h3>Powerlifting</h3>
+        <table id="records-table">
+            <tbody>
+                <tr>
+                    <th colspan="5">OFFICIAL RECORDS ~ Raw Open Division ~ 105 kg Weight Class</th>
+                </tr>
+                <tr>
+                    <th>Lift</th>
+                    <th>Kilograms (official)</th>
+                    <th>Pounds (approximate)</th>
+                    <th>Date</th>
+                    <th>Event</th>
+
+                </tr>
+                <tr>
+                    <td>Squat</td>
+                    <td>227.5</td>
+                    <td>501.6</td>
+                    <td>12/7/2019</td>
+                    <td>Power for a Purpose</td>
+                </tr>
+                <tr>
+                    <td>Bench Press</td>
+                    <td>147.5</td>
+                    <td>325.2</td>
+                    <td>12/7/2019</td>
+                    <td>Power for a Purpose</td=>
+                </tr>
+                <tr>
+                    <td>Deadlift</td>
+                    <td>260</td>
+                    <td>573.2</td>
+                    <td>12/7/2019</td>
+                    <td>Power for a Purpose</td=>
+                </tr>
+                <tr>
+                    <td>TOTAL</td>
+                    <td>635</td>
+                    <td>1,400</td>
+                    <td>12/7/2019</td>
+                    <td>Power for a Purpose</td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <a href="http://usapl.liftingdatabase.com/lifters-view?id=60520" target="blank">
+                            <div id="tbl-link-btn">
+                                USA Powerlifting Member Page
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="site-map">
+            <p>SITE MAP</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="powerlifting-videos.html">Powerlifting Videos</a></li>
+                <li><a href="photo-gallery.html">Photo Gallery</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
