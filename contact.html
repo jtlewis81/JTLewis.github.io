@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Page Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST-120 Milestone Project</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<!-- Page Body -->
+
+<body>
+
+    <!-- Content header -->
+    <header>
+        <!-- my logo image -->
+        <div id="logo-div-left" class="header-logo-div">
+            <img id="logo" class="logo" src="media/images/logo.png" title="My Logo (Click Me!)" alt="My Logo"
+                onclick="javascript:moveLogo()">
+        </div>
+        <!-- page title heading -->
+        <div class="page-title">
+            <h1>CONTACT</h1>
+            <h3>Send me a message!</h3>
+        </div>
+
+        <!-- Empty div to center header text -->
+        <div id="logo-div-right" class="header-logo-div">
+            <!-- The logo will transition back and forth to and from here when clicked on, via JS -->
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about-me.html">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="powerlifting-videos.html">POWERLIFTING VIDEOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="photo-gallery.html">PHOTO GALLERY</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="content container-md">
+        
+        <p>DISCLAIMER: This form is for HTML and POST demonstration only. No message will actually be sent to me, and your information will not be saved.</p>
+
+        <!-- form -->
+        <form method="POST" action="https://postman-echo.com/post" target="_blank">
+            <div class="form-group row">
+                <label for="first-name" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="first-name" name="first-name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="last-name" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="last-name" name="last-name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="email" name="email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="message" class="col-sm-2 col-form-label">Message</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="message" name="message"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12" align="right">
+                    <button type="submit" class="btn" id="form-btn">SEND</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="site-map">
+            <p>SITE MAP</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="powerlifting-videos.html">Powerlifting Videos</a></li>
+                <li><a href="photo-gallery.html">Photo Gallery</a></li>
+            </ul>
+        </div>
+        <div id="footer-right">
+            <div id="contact">
+                <a href="contact.html">CONTACT ME</a>
+            </div>
+            <div id="copyright">
+                <p>Copyright&nbsp;2021&nbsp;Jamie&nbsp;Lewis</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

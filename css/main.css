@@ -28,7 +28,7 @@ a:visited {
 
 header {
   height: auto;
-  padding: 10px;
+  padding: 10px 20px;
   display: -webkit-flex;
   justify-content: space-between;
 }
@@ -108,15 +108,18 @@ nav a:hover {
 /* FOOTER */
 
 footer {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
   width: 100%;
   border-top: 1px solid rgb(50, 50, 50);
-  padding: 10px;
+  padding: 10px 20px;
   margin: 0;
-  text-align: left;
 }
 
 #site-map {
   width: fit-content;
+  margin: 0 20px;
 }
 
 #site-map p {
@@ -137,6 +140,34 @@ footer {
   text-decoration: none;
 }
 
+#footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: fit-content;
+  margin: 10px 20px;
+}
+
+
+#contact a {
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+  padding: 8px 16px;
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 18px;
+}
+
+#copyright {
+  text-align: right;
+  color: rgb(150, 150, 150);
+}
+
+#copyright p {
+  margin: 0;
+  padding: 5px;
+}
 
 /* INDEX.HTML content */
 
@@ -166,6 +197,7 @@ footer {
   color: rgb(50, 50, 50);
   text-align: center;
   font-weight:bold;
+  border: 1px solid rgb(50, 50, 50);
   border-radius: 32px;
 }
 
@@ -333,6 +365,18 @@ td {
 .frame p {
   width: 100%;
   text-align: center;
+}
+
+
+/* CONTACT.HTML */
+
+#form-btn {
+  color: rgb(50, 50, 50);
+  background-color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 21px;
 }
 
 
